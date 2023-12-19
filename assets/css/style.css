@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.Accordion-box {
+  padding: 24px 21px;
+  max-width: 320px;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--white, #fff);
+  box-shadow: 0px 11px 44px -10px rgba(0, 0, 0, 0.25);
+}
+
+.Acc-head {
+  color: #808080;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+.heading {
+  color: var(--gray, #808080);
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content {
+  color: #808080;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  display: none;
+}
+.Acc-item {
+  width: 498px;
+  max-width: 270px;
+  border-radius: 5px;
+  border: 1px solid var(--border, rgba(0, 0, 0, 0.1));
+  padding: 12px;
+  cursor: pointer;
+  transition: all 500ms linear;
+}
+
+.active {
+  border: 1px solid #128dff;
+}
+
+.active p {
+  display: block;
+}
+
+.active h2 {
+  color: black;
+}
+
+.active img {
+  transform: rotate(180deg);
+}
+@media (min-width: 768px) {
+  .Accordion-box {
+    max-width: 400px;
+  }
+  .Acc-item {
+    max-width: 340px;
+  }
+}
